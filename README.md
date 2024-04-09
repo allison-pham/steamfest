@@ -1,4 +1,6 @@
-# tsb-steam-fest
-The STEAM Fest Website 2024
-
-Made with HTML | CSS | Javascript | Bootstrap | Firebase
+# The STEAM Boat: STEAM Fest 2024
+### **Tech**
+- HTML/CSS
+- JavaScript
+- Bootstrap
+- Firebase
