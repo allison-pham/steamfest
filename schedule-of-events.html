@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="schedule-of-events.css" />
 </head>
 <body>
+    <!-- <script src="schedule-of-events.js"></script> -->
     <header class="full-screen-header">
         <nav class="nav nav-top">
             <ul class="nav-list">
@@ -20,6 +21,14 @@
         <h1 class="title">Schedule of Events</h1>
         <span class="sub-title">STEAM Fest is a one month activity with events spanning from June 15 to June 23.</span>
         <a class="btn" href="#Schedule">Learn More</a>
+        <svg class="block1" width="527" height="649" viewBox="0 0 527 649" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M262.572 1.88238C353.451 -5.88126 463.555 8.19564 512.202 85.3489C558.915 159.435 473.276 247.397 472.598 334.979C471.933 421.048 557.19 509.89 508.371 580.777C458.68 652.93 348.202 658.458 262.572 639.948C189.478 624.147 152.586 550.378 104.152 493.398C62.0105 443.821 12.4134 399.411 3.34207 334.979C-7.09004 260.88 6.27861 183.696 52.2365 124.643C104.067 58.0434 178.487 9.06568 262.572 1.88238Z" fill="#454454"/>
+            </svg>
+            
+        <svg class="block2" width="652" height="685" viewBox="0 0 652 685" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M352.476 0.000492346C423.694 0.27173 435.139 110.668 488.168 158.207C532.644 198.079 607.859 199.947 634.916 253.2C663.025 308.525 650.241 376.526 628.649 434.705C607.67 491.232 561.819 531.053 516.878 571.25C466.432 616.372 419.394 671.595 352.476 681.73C280.792 692.586 208.357 666.488 147.421 627.205C83.893 586.251 22.6446 531.355 5.15105 457.823C-11.8649 386.299 15.2539 309.308 57.4719 249.118C93.436 197.844 168.181 197.578 216.031 157.17C270.367 111.286 281.358 -0.270364 352.476 0.000492346Z" fill="#454454"/>
+        </svg>
+            
     </header>
     <main>
         <section class="section" id="Schedule">
@@ -28,8 +37,9 @@
             <!-- Byline format: by [Speaker & Organisation] -->
             <!-- Activity Picture name format: img/day[]_activity[].jpeg -->
             <!-- Please change the image links accordingly if the images you have are of other formats -->
+            <button class="collapsible">Day 1 - June 15</button>
             <div class="day-grid">
-                <h3 class = "day-heading">Day 1 - June 15</h3>
+                <!-- <h3 class = "day-heading">Day 1 - June 15</h3> -->
                 <div class="day-grid-item">
                     <img src="img/day1_activity1.jpg" alt="Day 1 Activity 1">
                     <p>11am EST: [Event Name TBC], by [Speaker & Organisation TBC]</p>
@@ -56,8 +66,8 @@
                 </div>
             </div>
             <!-- day 2 -->
+            <button class="collapsible">Day 2 - June 16</button>
             <div class="day-grid">
-                <h3 class = "day-heading">Day 2 (June 16)</h3>
                 <div class="day-grid-item">
                     <img src="img/day2_activity1.jpg" alt="Day 2 Activity 1">
                     <p>11am EST: Getting Involved on Campus, by Ariel Gabriely</p>
@@ -89,5 +99,22 @@
     <footer>
         <p class="copyright">Copyright © 2024 STEAM Fest. All rights reserved</p>
     </footer>
+<script>
+    var coll = document.getElementsByClassName("collapsible")
+    var i
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        // this.classList.toggle("active")
+        var content = this.nextElementSibling
+        console.log(content)
+        if (content.style.maxHeight) {
+        content.style.maxHeight = null
+        } else {
+        content.style.maxHeight = content.scrollHeight + "px"
+        }
+    })
+    }
+</script>
 </body>
 </html>
