@@ -1,0 +1,126 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Cambria;
+  color: black;
+}
+
+.half-screen-header{
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  color: white;
+  position: relative;
+  background-color: #7783A4;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding:.5rem 1rem;
+}
+
+.nav-top{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1;
+  background-color: white;
+}
+
+.logo{
+  position: fixed;
+  top: 50px;
+  left: 25px;
+  width: 50px;
+  border-radius: 5rem;
+  margin: 1rem;
+}
+
+.nav-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-list a{
+  text-decoration: none;
+  margin-left: 1rem;
+  color: black;
+}
+
+.nav-list a:hover{
+  color: #CCC;
+}
+
+.title{
+  font-size: 3rem;
+  margin: 0;
+}
+
+.sub-title{
+  font-size: 1.5rem;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.btn{
+  background-color: #7783A4;
+  color: white;
+  border-radius: 10000px;
+  padding: .25em 1em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.btn:hover, .btn:focus{
+  background-color: #454454;
+}
+
+.competition-container{
+  padding: 2rem;
+  background-color: white;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.competition-item{
+  padding: 1rem;
+  width: 100%;
+  background-color: #9FB7D0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.competition-item-image{
+  flex: 0 0 25%; /* Flex-basis 25% */
+  max-width: 25%; /* Ensure image does not exceed 25% */
+  height: 0.5rem;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.competition-item-description{
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  flex: 1; /* Flex-basis 75% */
+  max-width: 75%; /* Ensure text does not exceed 75% */
+}
