@@ -124,3 +124,7 @@ body{
   flex: 1; /* Flex-basis 75% */
   max-width: 75%; /* Ensure text does not exceed 75% */
 }
+
+footer{
+  padding-left: 1rem;
+}
