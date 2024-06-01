@@ -1,1 +1,191 @@
+*{
+  box-sizing: border-box;
+}
 
+body{
+  margin: 0;
+  font-family: Cambria;
+  color: black;
+}
+
+.full-screen-header{
+  height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  flex-direction: column;
+
+  color: black;
+  position: relative;
+  background-color: #CDD9DD;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding:.5rem 1rem;
+}
+
+.nav-top{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:1;
+  background-color: white;
+}
+
+.nav-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-list a{
+  text-decoration: none;
+  margin-left: 1rem;
+  color: black;
+}
+
+.nav-list a:hover{
+  color: #CCC;
+}
+
+.sub-title{
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  color: #7783A4;
+}
+
+.heading-text{
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #7783A4;
+}
+
+.btn{
+  background-color: #2c2b3b;
+  color: white;
+  border-radius: 12px;
+  padding: .3em 3em;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.btn:hover, .btn:focus{
+  /* a paler colour */
+  background-color: #454454;
+}
+
+.big-logo{
+  margin-top: 10vh;
+  width: 15rem;
+  border-radius: 24px;
+}
+
+footer{
+  padding-left: 1rem;
+}
+
+/* Countdown */
+.countdown-container {
+  text-align: center;
+  color: #9FB7D0;
+  background-color: #454454;
+  padding: 2rem;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#countdown div {
+  font-size: 1.5rem;
+}
+
+#countdown span {
+  font-weight: bold;
+}
+
+.other-container {
+  display: flex;
+}
+
+.box {
+  /*flex: 1;*/
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.info {
+  flex: 1;
+}
+.box h2 {
+  margin-top: 0;
+}
+
+.info h1 {
+  color: #9FB7D0;
+  font-size: 3rem;
+}
+
+.info p {
+  color: #CDD9DD;
+  font-size: 1.4rem;
+}
+
+main{
+  background-color: #454454;
+}
+
+.counter-container {
+  text-align: center;
+  margin-top: 2rem;
+  height: 10vh;
+  padding-bottom: 2rem;
+}
+
+.counter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.counter-num{
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 400px;
+}
+
+.text {
+  margin-left: 1rem;
+}
+
+.text-space {
+  color: #CDD9DD;
+  font-size: 2rem;
+  margin-top: 0.75rem;
+}
+
+.bottom-container{
+  background-color: #454454;
+  width: 100%;
+  height: 10vh;
+}
