@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const secondsElement = document.getElementById('seconds');
 
     // Set the target date and time in your local time zone
-    const targetDate = new Date('2024-06-15T00:00:00').getTime();
+    const targetDate = new Date('2024-06-10T00:00:00').getTime();
 
     function updateCountdown() {
         const now = new Date().getTime();
